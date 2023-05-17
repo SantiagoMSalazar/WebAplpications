@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Main</title>
+  <link rel="stylesheet" type="text/css" href="./main/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Main</h1>
+    <button id="cartButton">Carrito de Compras</button>
+    <button id="logoutButton">Cerrar Sesión</button>
+
+    <div class="notebooks">
+      <div class="notebook" onmouseover="showBuyOption(this)" onmouseout="hideBuyOption(this)">
+        <h3>Notebook 1</h3>
+        <p>Descripción del notebook 1.</p>
+        <p class="buyOption">¡Haz clic aquí para comprar!</p>
+      </div>
+
+      <div class="notebook" onmouseover="showBuyOption(this)" onmouseout="hideBuyOption(this)">
+        <h3>Notebook 2</h3>
+        <p>Descripción del notebook 2.</p>
+        <p class="buyOption">¡Haz clic aquí para comprar!</p>
+      </div>
+
+      <div class="notebook" onmouseover="showBuyOption(this)" onmouseout="hideBuyOption(this)">
+        <h3>Notebook 3</h3>
+        <p>Descripción del notebook 3.</p>
+        <p class="buyOption">¡Haz clic aquí para comprar!</p>
+      </div>
+    </div>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Cédula</th>
+        <th>Edad</th>
+        <th>Fecha de ingreso</th>
+        <th>Género</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Doe</td>
+        <td>123456789</td>
+        <td>30</td>
+        <td>2023-01-15</td>
+        <td>Masculino</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>987654321</td>
+        <td>28</td>
+        <td>2023-02-20</td>
+        <td>Femenino</td>
+      </tr>
+      <tr>
+        <td>David Johnson</td>
+        <td>456789123</td>
+        <td>35</td>
+        <td>2023-03-10</td>
+        <td>Masculino</td>
+      </tr>
+    </tbody>
+  </table>
+  
+
+
+
+  <script src="./main/script.js"></script>
+</body>
+</html>

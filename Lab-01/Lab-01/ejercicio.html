@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicio de cookies</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Cookies</h1>
+
+  <label for="cookieT">Texto</label>
+  <input type="text" id="cookieT" />
+
+  <button onclick="grabarCookie()">Grabar cookie</button>
+  <button onclick="leerCookie()">Leer cookie</button>
+
+  <script>
+    function grabarCookie() {
+      var texto = document.getElementById('cookieT').value;
+
+      document.cookie = "cookieText=" + texto + ";";
+
+      alert("Cookie guardada correctamente");
+    }
+
+    function leerCookie() {
+      var cookies = document.cookie.split(";");
+
+      var cookieValues = {};
+      for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i].trim().split("=");
+        var name = cookie[0];
+        var value = cookie[1];
+        cookieValues[name] = value;
+      }
+
+      var texto = cookieValues["cookieText"];
+
+      if (texto) {
+        alert("Valor guardado en la cookie:\nTexto: " + texto);
+      } else {
+        alert("No se encontró la cookie o falta algún valor");
+      }
+    }
+  </script>
+</body>
+</html>

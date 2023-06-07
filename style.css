@@ -7,10 +7,47 @@
     text-align: center;
   }
   
+
+
+
+
+
+
   h1 {
-    color: #333;
+    color: hsl(256, 47%, 39%);
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   input[type="text"],
   input[type="password"] {
     width: 100%;
